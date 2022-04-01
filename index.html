@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player - Let the music play</title>
+    <link rel="stylesheet" href="./style/style.css"> <!-- Link Style Sheet -->
+    <link rel="shortcut icon" href="./favicon.jpeg" type="image/x-icon"> <!-- Link Favicon -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <img src="./Images/logo.png">
+        <h1>Music Player</h1>
+
+        <ul>
+            <li> <i class="fa fa-solid fa-house-user"></i> Home</li>
+            <li> <i class="fa fa-solid fa-music"></i> Music </li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Music Section -->
+        <section class="music">
+            <div class="leftSide">
+                <div id="song1" class="songs">
+                    <img src="./Images/Thumbnail.jpeg" class="songImg">
+                    <p>Agar Tum Saath Ho - Arijit Singh</p>
+                    <i class="fa fa-solid fa-play"></i>
+                </div>
+                <div id="song2" class="songs">
+                    <img src="./Images/Thumbnail.jpeg" class="songImg">
+                    <p>Dil Diyan Gallan - Atif Aslam</p>
+                    <i class="fa fa-solid fa-play"></i>
+                </div>
+                <div id="song3" class="songs">
+                    <img src="./Images/Thumbnail.jpeg" class="songImg">
+                    <p>Khariyat - Arijit Singh</p>
+                    <i class="fa fa-solid fa-play"></i>
+                </div>
+                <div id="song4" class="songs">
+                    <img src="./Images/Thumbnail.jpeg" class="songImg">
+                    <p>Main Rang Sharbatoon Ka - Atif Aslam</p>
+                    <i class="fa fa-solid fa-play"></i>
+                </div>
+                <div id="song5" class="songs">
+                    <img src="./Images/Thumbnail.jpeg" class="songImg">
+                    <p>Musafir - Atif Aslam</p>
+                    <i class="fa fa-solid fa-play"></i>
+                </div>
+                <div id="song6" class="songs">
+                    <img src="./Images/Thumbnail.jpeg" class="songImg">
+                    <p>O Saathi - Atif Aslam</p>
+                    <i class="fa fa-solid fa-play"></i>
+                </div>
+                <div id="song7" class="songs">
+                    <img src="./Images/Thumbnail.jpeg" class="songImg">
+                    <p>Raabta - Arijit Singh</p>
+                    <i class="fa fa-solid fa-play"></i>
+                </div>
+                <div id="song8" class="songs">
+                    <img src="./Images/Thumbnail.jpeg" class="songImg">
+                    <p>Tera yaar Hoon Main - Arijit Aslam</p>
+                    <i class="fa fa-solid fa-play"></i>
+                </div>
+                <div id="song9" class="songs">
+                    <img src="./Images/Thumbnail.jpeg" class="songImg">
+                    <p>Tere Sang Yaara - Atif Aslam<i class="fa-solid fa-play"></i></p>
+                    <i class="fa fa-solid fa-play"></i>
+                </div>
+            </div>
+
+            <div class="rightSide">
+                <img src="./Others/CD Playing.gif">
+            </div>
+        </section>
+
+        <!-- Music Player Section -->
+        <section class="player">
+            <img src="./Others/Music Playing.gif" class="musicPlayingGif" id="musicPlayingGif">
+
+            <h5 id="playerSongName" class="songNameHide">Agar Tum Saath Ho - Arijit Singh</h5>
+
+            <div class="playerOption" id="playerOption">
+                <input type="range" name="songProgress" id="songProgress" value="0">
+
+                <div class="playerControler">
+                    <i class="fa fa-solid fa-backward playerOptionItems" id="previousSongBtn"></i>
+                    <i class="fa fa-solid fa-play playerOptionItems masterPlayBtn" id="masterPlayBtn"></i>
+                    <i class="fa fa-solid fa-forward playerOptionItems" id="nextSongBtn"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script> <!-- Link JavaScript File -->
+    <script src="https://kit.fontawesome.com/78b27dc5be.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

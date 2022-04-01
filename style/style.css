@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #201e1e;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 1rem;
+  cursor: pointer;
+  font-family: "Fredoka", sans-serif;
+}
+
+nav img {
+  width: 8rem;
+}
+
+nav h1 {
+  font-family: "Fredoka", sans-serif;
+  -webkit-transform: translateX(-2rem);
+          transform: translateX(-2rem);
+  letter-spacing: 1px;
+}
+
+.music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6521bd), to(#0f8eb5));
+  background: linear-gradient(180deg, #6521bd, #0f8eb5);
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 0.4rem 0;
+  border-radius: 2rem;
+  border: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+.music .leftSide {
+  margin: 0 2rem;
+}
+
+.music .leftSide div {
+  width: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+  background-color: #4c4747;
+  color: #fff;
+  padding: 0.2rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.music .leftSide div img {
+  width: 2rem;
+  border-radius: 40%;
+}
+
+.music .leftSide div p {
+  font-family: "Fredoka", sans-serif;
+  margin: 0 1rem;
+}
+
+.music .leftSide div i {
+  cursor: pointer;
+}
+
+.music .rightSide img {
+  width: 30rem;
+  border-radius: 1rem;
+}
+
+.player {
+  width: 100vw;
+  height: 10.6vh;
+  background-color: #201e1e;
+  color: #fff;
+  margin-top: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player .musicPlayingGif {
+  width: 4rem;
+  -webkit-transform: translateX(2rem);
+          transform: translateX(2rem);
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.player #playerSongName {
+  width: 16rem;
+  font-size: 1rem;
+  position: relative;
+  top: 0.6rem;
+  left: 12rem;
+  font-family: "Fredoka", sans-serif;
+  letter-spacing: 1px;
+}
+
+.player .playerOption {
+  -webkit-transform: translateX(-8rem);
+          transform: translateX(-8rem);
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player .playerOption #songProgress {
+  width: 60rem;
+  cursor: pointer;
+}
+
+.player .playerOption .playerOptionItems {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
